@@ -1,0 +1,29 @@
+<HTML>
+    <HEAD>
+        <TITLE>Image Sentiment Detection</TITLE>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
+    </HEAD>
+    <STYLE>
+        .body_results{
+            border:1px solid black;
+            font-family: 'Nunito', sans-serif;
+            width:60%;
+        }
+    </STYLE>
+
+    <BODY>
+        <center>
+        <DIV class="body_results">
+        <CENTER>
+        Sentiment Detected:
+        {% for galaxy in data %}
+            <li>{{ galaxy }}</li>
+        {% endfor %}
+       </CENTER>
+        </DIV>
+        {{ image }}
+    </center>
+    </BODY>
+</HTML>
